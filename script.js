@@ -111,13 +111,13 @@ for (let pokemon of pokemons) {
 
         img.src = pokemon.img
         h2.innerText = pokemon.name
-        let lllll = pokemon.stats
+        let statistika = pokemon.stats
         modal.append(img, h2)
 
-        for (let i in lllll) {
-            console.log(lllll[i])
+        for (let i in statistika) {
+            console.log(statistika[i])
             const p = document.createElement("p")
-            p.innerText = `${i}: ${lllll[i]}`
+            p.innerText = `${i}: ${statistika[i]}`
             modal.appendChild(p)
         }
 
