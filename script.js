@@ -5,12 +5,12 @@ const pokemons = [
         name: "bulbasaur",
         ability: ["grass", "poision"],
         stats: {
-            hp: 39,
-            attack: 52,
-            defense: 43,
-            special_attack: 60,
-            special_defense: 50,
-            speed: 65
+            hp: 40,
+            attack: 50,
+            defense: 45,
+            special_attack: 70,
+            special_defense: 80,
+            speed: 55
         }
     },
     {
@@ -19,8 +19,8 @@ const pokemons = [
         name: "ivysaur",
         ability: ["grass", "poision"],
         stats: {
-            hp: 39,
-            attack: 52,
+            hp: 32,
+            attack: 48,
             defense: 43,
             special_attack: 60,
             special_defense: 50,
@@ -33,12 +33,12 @@ const pokemons = [
         name: "charmander",
         ability: ["fire"],
         stats: {
-            hp: 39,
-            attack: 52,
-            defense: 43,
-            special_attack: 60,
-            special_defense: 50,
-            speed: 65
+            hp: 33,
+            attack: 42,
+            defense: 49,
+            special_attack: 62,
+            special_defense: 43,
+            speed: 61
         }
     },
     {
@@ -47,12 +47,12 @@ const pokemons = [
         name: "charmeleon",
         ability: ["fire"],
         stats: {
-            hp: 39,
-            attack: 52,
-            defense: 43,
-            special_attack: 60,
-            special_defense: 50,
-            speed: 65
+            hp: 36,
+            attack: 51,
+            defense: 33,
+            special_attack: 53,
+            special_defense: 45,
+            speed: 77
         }
     },
     {
@@ -61,12 +61,12 @@ const pokemons = [
         name: "charizard",
         ability: ["fire", "flying"],
         stats: {
-            hp: 39,
-            attack: 52,
-            defense: 43,
-            special_attack: 60,
-            special_defense: 50,
-            speed: 65
+            hp: 35,
+            attack: 48,
+            defense: 51,
+            special_attack: 61,
+            special_defense: 58,
+            speed: 73
         }
     },
     {
@@ -75,12 +75,12 @@ const pokemons = [
         name: "wartortle",
         ability: ["water"],
         stats: {
-            hp: 39,
-            attack: 52,
-            defense: 43,
-            special_attack: 60,
-            special_defense: 50,
-            speed: 65
+            hp: 42,
+            attack: 39,
+            defense: 38,
+            special_attack: 58,
+            special_defense: 44,
+            speed: 62
         }
     }
 ]
@@ -96,10 +96,13 @@ for (let pokemon of pokemons) {
 
     const img = document.createElement("img")
     img.src = pokemon.img
+    img.style.width = "200px"
 
     const p = document.createElement("p")
     p.classList.add("name")
     p.innerText = pokemon.name
+    p.style.color = "white"
+    p.style.fontSize = "22px"
 
     div.append(img, p)
 
@@ -113,6 +116,7 @@ for (let pokemon of pokemons) {
         h2.innerText = pokemon.name
         let statistika = pokemon.stats
         modal.append(img, h2)
+        img.style.width = "200px"
 
         for (let i in statistika) {
             console.log(statistika[i])

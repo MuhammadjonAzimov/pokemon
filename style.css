@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body {
@@ -21,7 +22,8 @@ body {
 }
 
 .grid-container .pokemon {
-    background-color: aliceblue;
+    border: 3px solid yellow;
+    background: radial-gradient(121.73% 181.92% at 6.77% 4.33%, rgb(79, 82, 117) 0%, rgb(51, 48, 75) 100%);
     padding: 25px 50px;
     text-align: center;
     color: black;
@@ -49,9 +51,11 @@ body {
 }
 
 .overlay .modal {
+    border: 2px solid yellowgreen;
     width: 400px;
     height: 400px;
-    background-color: aliceblue;
+    background-color: rgb(79, 82, 117);
+    color: rgb(212, 212, 212);
     position: absolute;
     top: -50%;
     left: 50%;
@@ -61,7 +65,7 @@ body {
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 110px;
     justify-content: center;
 }
 
